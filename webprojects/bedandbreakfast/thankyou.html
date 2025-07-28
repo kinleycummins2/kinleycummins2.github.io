@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!--Author: Kinley Cummins
+    Date: 7/7/25
+    Page: thankyou.html-->
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/c4e07c2edf.js" crossorigin="anonymous"></script>
+  <title>Form Submission</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="request.html">Request Info</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h2 style="text-align: center;">Thank you for requesting info! We will be in touch soon!</h2>
+
+    <script>
+      printQuery();
+    </script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Name: Kinley Cummins
+     Date: 7/24/25
+     Filename: index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom style sheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4e07c2edf.js" crossorigin="anonymous"></script>
+    <title>Happy Paws</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Happy Paws</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heading" class="container my-4">
+        <img src="images/happydog.webp" alt="Dog with its mouth open and eyes closed" class="img-fluid w-100 top-image">
+    </div>
+
+    <!-- Header section -->
+    <header class=" text-center p-5">
+        <h1 class="display-4"><i class="fa-solid fa-paw"></i> Welcome to Happy Paws! <i class="fa-solid fa-paw"></i>
+        </h1>
+        <p class="lead">Where tails wag and paws high-five! Expert dog care with a personal touch.</p>
+    </header>
+
+    <!-- Gallery section -->
+    <section id="gallery" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Happy Guests</h2>
+            <div class="carousel-wrapper mx-auto" style="max-width: 750px;">
+                <div id="petCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/beagle.jpg" class="d-block w-100" alt="A beagle chasing a ball">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Snickers - A regular at doggy daycare!</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/doginbath.jpg" class="d-block w-100"
+                                alt="Golden retreiver getting a bath">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Luna - Enjoying her spa day!</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/dogsleeping.jpg" class="d-block w-100" alt="A Golden doodle sleeping">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Bentley - Resting up while his owners are on vacation!</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#petCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#petCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Services section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/doggydaycare.jpg" class="card-img-top" alt="Daycare">
+                        <div class="card-body">
+                            <h5 class="card-title">Doggy Daycare</h5>
+                            <p class="card-text">Safe, supervised fun while you're at work!</p>
+                            <a href="#" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/doggrooming.webp" class="card-img-top" alt="Grooming">
+                        <div class="card-body">
+                            <h5 class="card-title">Pet Grooming</h5>
+                            <p class="card-text">Baths, trims, and pampering for all pets.</p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/boarding.jpg" class="card-img-top" alt="Boarding">
+                        <div class="card-body">
+                            <h5 class="card-title">Overnight Boarding</h5>
+                            <p class="card-text">Comfy suites & 24/7 care for your furry friends.</p>
+                            <a href="#" class="btn btn-primary">Reserve a stay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faqs" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                            aria-expanded="true" aria-controls="faq1">
+                            What should I bring for overnight stays?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Bring your pet’s food, any medications, and a favorite toy or blanket!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            Can I tour the facility?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Absolutely! We offer tours Monday through Saturday by appointment.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            What vaccinations are required?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            All pets must be up-to-date on core vaccines including rabies, distemper, and bordetella.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Happy Paws. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript + Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Author: Kinley Cummins
+    Date: 7/7/25
+    Page: request.html-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/c4e07c2edf.js" crossorigin="anonymous"></script>
+  <title>Request Info - Lakeside Haven</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="request.html">Request Info</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Request More Info</h1>
+    <p>We’d love to help you plan your stay at Table Rock Lake.</p>
+
+    <form method="get" action="thankyou.html">
+      <label for="fname">First Name:</label>
+      <input type="text" name="fname" id="fname" required><br>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" name="lname" id="lname" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email"><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" name="phone" id="phone"><br>
+
+      <label for="contact">Best Way to Reach You:</label>
+      <select name="contact" id="contact">
+        <option>Email</option>
+        <option>Phone</option>
+      </select><br>
+
+      <fieldset>
+        <legend>Amenities or Activities You're Interested In:</legend>
+        <input type="checkbox" name="interest" value="fireplace"> Fireplace
+        <input type="checkbox" name="interest" value="lake-access"> Lake Access
+        <input type="checkbox" name="interest" value="pet"> Pet Friendly
+        <input type="checkbox" name="interest" value="trails"> Walking Trails
+        <input type="checkbox" name="interest" value="kayak"> Kayak Rental
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferred Stay:</legend>
+        <input type="radio" name="stay" value="weekend"> Weekend
+        <input type="radio" name="stay" value="weekday"> Weekday
+        <input type="radio" name="stay" value="flexible"> Flexible
+      </fieldset>
+
+      <input type="submit" value="Submit Request">
+    </form>
+  </main>
+</body>
+
+</html>
