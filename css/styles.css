@@ -1,3 +1,151 @@
 /* Kinley Cummins
 07/28/25
 styles.css */
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #130e11;
+    margin-bottom: 0.9rem;
+}
+
+/* Navigation */
+.navbar {
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #e193a0;
+}
+
+/* Header section */
+header {
+    background-color: #cf3f87;
+    padding: 4rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: #ffe0ef;
+}
+
+#skills {
+    border: 7px dotted rgb(255, 147, 190);
+}
+
+#contact {
+    border: 7px dotted rgb(255, 147, 190);
+}
+
+/* Section padding */
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Project cards */
+.card {
+    border: 1px solid #f3d5e2;
+    box-shadow: 0 0 10px rgba(248, 53, 150, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #050405;
+}
+
+.btn-primary {
+    background-color: #d63384;
+    border-color: #d63384;
+}
+
+.btn-primary:hover {
+    background-color: #b42a6f;
+    border-color: #b42a6f;
+}
+
+.btn-success {
+    background-color: #ff85b3;
+    border-color: #ff85b3;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #e65d98;
+    border-color: #e65d98;
+}
+
+/* Footer */
+footer {
+    background-color: #cf3f87;
+    color: #6c757d;
+}
+
+/* Contact form */
+form label {
+    font-weight: 500;
+}
+
+input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Media Queries - Responsive Layout */
+
+/* Tablet */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        min-height: 100%;
+    }
+
+    #projects .row {
+        display: flex;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
